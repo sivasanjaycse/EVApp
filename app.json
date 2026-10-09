@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "EV Station Owner",
+    "slug": "ev-station-owner",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "evapp",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.evstation.ownerapp"
+    },
+    "android": {
+      "package": "com.evstation.ownerapp",
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/images/android-icon-foreground.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/ev-logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FFFFFF",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 140
+        }
+      ]
+    ],
+    "extra": {
+      "firebaseUrl": "https://iot-proj-be-default-rtdb.firebaseio.com",
+      "eas": {
+        "projectId": ""
+      }
+    },
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
